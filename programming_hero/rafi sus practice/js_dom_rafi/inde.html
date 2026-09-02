@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>This h1 has id</h1>
+    <ul id="my-blog">
+        <li>my blog 1</li>
+        <li>my blog 2</li>
+        <li>my blog 3</li>
+        <li>my blog 4</li>
+    </ul>
+    
+    <section>
+        <article class="blog" >
+            <h3 id="first-blog" >This is my <i>Blog 1</i> </h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quibusdam eius libero a, omnis odio perferendis, modi animi ratione eum in dicta et unde inventore incidunt provident, excepturi nulla cupiditate repudiandae velit dolore fuga dignissimos! Iusto praesentium ratione aperiam neque, laudantium hic tempora perspiciatis aliquam deserunt quia repellat! Explicabo, distinctio!</p>
+        </article>
+        <article class="blog" >
+            <h3 id="second-blog" >This is my <i>Blog 2</i> </h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quibusdam eius libero a, omnis odio perferendis, modi animi ratione eum in dicta et unde inventore incidunt provident, excepturi nulla cupiditate repudiandae velit dolore fuga dignissimos! Iusto praesentium ratione aperiam neque, laudantium hic tempora perspiciatis aliquam deserunt quia repellat! Explicabo, distinctio!</p>
+        </article>
+        <article class="blog" >
+            <h3 id="third-blog" >This is my <i>Blog 3</i> </h3>
+            <p>me memw mew mew mew mew mew mew mew mew emw Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quibusdam eius libero a, omnis odio perferendis, modi animi ratione eum in dicta et unde inventore incidunt provident, excepturi nulla cupiditate repudiandae velit dolore fuga dignissimos! Iusto praesentium ratione aperiam neque, laudantium hic tempora perspiciatis aliquam deserunt quia repellat! Explicabo, distinctio!</p>
+        </article>
+        <article class="blog" >
+            <h3 id="fourth-blog" >This is my <i>Blog 4</i> </h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quibusdam eius libero a, omnis odio perferendis, modi animi ratione eum in dicta et unde inventore incidunt provident, excepturi nulla cupiditate repudiandae velit dolore fuga dignissimos! Iusto praesentium ratione aperiam neque, laudantium hic tempora perspiciatis aliquam deserunt quia repellat! Explicabo, distinctio!</p>
+        </article>
+
+        
+    </section>
+
+    <script>
+        //get element by ID
+        let blog4 = document.getElementById('fourth-blog');
+        blog4.style.backgroundColor = "red";
+        blog4.style.textAlign = "center";
+        document.getElementById("third-blog").style.backgroundColor = 'royalblue';
+        document.getElementById('second-blog').style.backgroundColor = 'pink';
+        document.getElementById("first-blog").style.backgroundColor = "yellow";
+        document.getElementById('first-blog').innerText = 'Text edited by js';
+        document.getElementById('first-blog').style.textAlign = 'center';
+        
+        //get element by class
+        //const blogs = document.getElementsByClassName('blog');
+        //for( let blog in blogs){
+             
+            //blog.style.backgroundColor = 'red';
+        //}
+        
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+.border{
+    width: 50%;
+    height: 1px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url(bg-01.jpg);
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sec1, .sec2, .sec3, .sec4{
+    height: 100vh;
+}
+.sec5{
+    height: 25vh;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+    position: fixed;
+    z-index: 5;
+    transition: all 0.4s;
+}
+.scroll{
+    background-color: rgba(0, 0, 0, 0.918);
+    backdrop-filter: blur(50px);
+}
+nav h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-style: italic;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0px 20px 0px 20px;
+    transition: all 0.3s;
+}
+nav ul li:hover{
+    transform: scale(1.1);
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;    
+}
+.sec1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+article{
+    text-align: left;
+}
+.sec1 article h1{
+    font-size: 100px;
+    font-style: italic;
+    line-height: 95%;
+    color: white;
+    width: 750px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: flex;
+}
+.sec1 article p{
+    display: flex;
+    width: 600px;
+}
+.sec1 article h1:hover{
+    font-style: normal;
+}
+.sec2_skill_conntainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+.sec2{
+    color: white;
+    text-align: center;
+    margin: 0px 300px 0px 300px;
+    align-items: center;
+    display: flex;
+}
+.col_skill i{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 15px;
+}
+.col_skill p{
+    font-size: 15px;
+}
+.col_skill{
+    padding: 25px 30px;
+    flex-wrap: wrap;
+    backdrop-filter: invert();
+    color: black;
+}
+.sec2 article{
+    text-align: left;
+    width: 800px;
+    margin-right: 50px;
+}
+.sec2 .service{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.sec2 article p{
+    margin-bottom: 25px;
+}
+
+.sec3{
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.sec3 article{
+    width: 600px;
+}
+.sec3 article h1{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+article p{
+    font-size: 20px;
+    color: white;
+}
+.sec4{
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec4 .inputBox{
+    width: 400px;
+}
+.sec4 form h2{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.sec4 .inputBox input,textarea{
+    width: 100%;
+    margin: 15px 0px 0px 0px;
+    resize: vertical;
+    padding: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.075);
+    border-bottom: 5px solid white;
+    color: white;
+    backdrop-filter: blur(0px);
+}
+.sec4 .inputBox input:focus ,textarea:focus{
+    outline: none;
+    backdrop-filter: blur(4px);
+    background-color: rgba(16, 16, 16, 0.568);
+}
+.outputBtn{
+    margin: 15px 0px 0px 0px;
+}
+.outputBtn input{
+    background-color: rgba(16, 16, 16, 0.568);
+    backdrop-filter: blur(5px);
+    color: white;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    font-weight: 600;
+    font-size: 19px;
+}
+.sec4 span{
+    font-size: 17px;
+    color: white;
+    margin-top: 10px;
+}
+.sec5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: invert();
+}
+.sec5 footer i{
+    color: black;
+    font-size: 35px;
+    transition: all 0.3s;
+    margin:  15px 10px 15px 10px;
+}
+footer a i:hover{
+    font-size: 30px;
+}
+#icon1:hover{
+    color: rgb(144, 50, 172);
+}
+#icon2:hover{
+    color: rgb(42, 127, 224);
+}
+#icon3:hover{
+    color: #0e76a8;
+}
+
+.sec5 footer{
+    text-align: center;
+}
+.sec5 button{
+    padding: 5px 20px 5px 20px;
+    background-color: rgba(16, 16, 16, 0.993);
+    backdrop-filter: blur(5px);
+    color: white;
+    border: none;
+    font-weight: 500;
+    font-size: 19px;
+    margin-top: 10px;
+}
+#mode{
+    color: white;
+    font-size: 25px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+a{
+    text-decoration: none;
+}
+
+.lightMode{
+    filter: invert(100%);
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+
+    
+</head>
+<body>
+    <nav>
+        <h1>Logo</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact</a></li>
+            <a href="#"><i id="mode" class="bi bi-brightness-low"></i></a>
+        </ul>
+    </nav>
+
+    <div class="sec1">
+        <article>
+            <h1>"lorem ipsum dolor amet."</h1>
+            <div class="border"></div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, reprehenderit.</p>
+        </article>
+    </div>
+
+    <div class="sec2">
+        <article>
+            <h1 class="service">Service</h1>
+            <div class="border"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tenetur veniam tempora ratione aliquid.</p>
+        </article>
+        <div class="sec2_skill_conntainer">
+            <div class="col_skill">
+                <!-- <i class="lni lni-layers"></i> -->
+                <i class="bi bi-layers"></i>
+                <h1>Graphics design</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit temporibus suscipit consectetur.</p>
+            </div>
+            <div class="col_skill">
+                <!-- <i class="lni lni-code"></i> -->
+                <i class="bi bi-code-slash"></i>
+                <h1>Web Devlopment</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit temporibus suscipit consectetur.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec3">
+        <article>
+            <h1>About Me</h1>
+            <div class="border"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laborum vel aliquid, quas repellendus id explicabo quidem at commodi tenetur quisquam voluptates odio facilis velit voluptatibus vero quibusdam. Tempore ullam veritatis, dignissimos architecto molestiae non enim aliquid in nulla numquam id ea reprehenderit dolores, cumque earum voluptatibus, harum laudantium fugiat.</p>
+        </article>
+    </div>
+
+    <div class="sec4">
+        <form>
+            <h2>Send Message</h2>
+            <div class="border"></div>
+             <div class="inputBox">
+                 <input type="text" required="required">
+                 <span>Full name</span>
+             </div>
+             <div class="inputBox">
+                <input type="text" required="required">
+                <span>Email</span>
+            </div>
+            <div class="inputBox">
+                <textarea required="required" rows="5"></textarea>
+                <span>Type your message...</span>
+            </div>
+            <div class="outputBtn">
+                <input type="submit" value="Send">
+            </div>
+        </form>
+    </div>
+     <div class="sec5">
+         <footer>
+            <a href="#"><i id="icon1" class="bi bi-github"></i></a>
+            <a href="#"><i id="icon2" class="bi bi-facebook"></i></a>
+            <a href="#"><i id="icon3" class="bi bi-linkedin"></i></a>
+            <h1>Thanks! for visiting the website :)</h1>         
+            <button>See all design</button>
+         </footer>
+     </div>
+    <script>
+        window.addEventListener('scroll', function(){
+            let navbar = document.querySelector('nav');
+            navbar.classList.toggle('scroll', window.scrollY > 0);
+        })
+
+        window.addEventListener("click", function(){
+            let mode = document.querySelector("#mode")
+            let body = document.querySelector('body')
+            body.classList.toggle("lightMode");
+        })
+    </script>
+</body>
+</html>

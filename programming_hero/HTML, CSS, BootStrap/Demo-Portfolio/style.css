@@ -1,0 +1,82 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    color: #FC466B;
+}
+
+span {
+    color: #ffffff;
+    background-image: linear-gradient(to right, #FCB36B, #FC466B);
+    padding: 0px 10px;
+}
+
+p {
+    font-size: 20px;
+    width: 80%;
+}
+
+.flexible-container{
+    display: flex;
+}
+section{
+    height: 100vh;
+}
+
+#sec1 {
+    background-image: url(./images/cornerAbstract-01.png);
+    background-repeat: no-repeat;
+    background-size: 170px;
+}
+
+.half {
+    width: 50%;
+    padding: 7% 7%;
+}
+
+.half img {
+    width: 100%;
+}
+
+button {
+    background-image: linear-gradient(to right, #FC466b, #FCB36B);
+    border: 0;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    border-radius: 25px;
+}
+
+#sec2{
+    background-image: url(./images/cornerAbstract-02.png);
+    background-repeat: no-repeat;
+    background-size: 90px;
+    background-position: right;
+}
+.heading-center{
+    text-align: center;
+    width: 100%;
+    padding-top: 150px;
+}
+.card{
+    width: 25%;
+    padding: 2% 4%;
+    margin-left: 10%;
+    background-color: whitesmoke;
+    border-bottom: 12px solid;
+    border-image: linear-gradient(to right, #FC466b, #FCB36B) 10;
+}
+#sec3{
+    background-image: url(./images/cornerAbstract-03.png);
+    background-repeat: no-repeat;
+    background-size: 170px;
+    background-position: bottom;
+    background-position-x: 95%;
+}

@@ -1,0 +1,27 @@
+[
+    {   
+        "id":"1",
+        "name": "Potrait",
+        "image": "./img/potrait.jpg",
+        "price": "$60",
+        "description":"I can do professional photography for your personal photo. I can do any type of photography for official use or for casual photoshot."
+
+        
+    },
+    {   
+        "id":"2",
+        "name": "Product",
+        "image": "./img/product.jpg",
+       "price":"$80",
+        "description":"Now a days online business is the most profitable than any other time. For a good online business you need a clear cut photo of your product and there is the why I can do this for you "
+    },
+    {   
+        "id":"3",
+        "name": "Wedding",
+        "image": "./img/wedding.jpg",
+        "price":"$70",
+        "description":"Wedding is a memorable event of a your life. Make this moment more memorable with some beautiful shoot with me. "
+    }
+  
+   
+]

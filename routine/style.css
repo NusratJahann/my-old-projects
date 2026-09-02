@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    position: relative;
+}
+.div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 25%);
+}
+img{
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 25px;
+    display: flex;
+    border: 5px solid;
+}
+th{
+    justify-content: space-between;
+    width: 200px;
+    border: 1px solid;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(12, 67, 170);
+    color: white;
+    border-radius: 10px;
+}
+td{
+    background-color: whitesmoke;
+    padding: 10px;
+    border: 5px solid white;
+}

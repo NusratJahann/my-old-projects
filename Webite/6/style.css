@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+body{
+    cursor: none;
+    background-color: rgb(2, 1, 1);
+    height: 120vh;
+}
+:root{
+    --backgroundColor: #e26600;
+    animation: changeColor 5s linear infinite;
+}
+@keyframes changeColor{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.cursor{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    animation: changeColor 5s linear infinite;
+    pointer-events: none;
+    cursor: none;
+    transition: all 0.3s ease;
+    transition-property: transform, border;
+    transform-origin: 100% 100%;
+    z-index: 1;
+    border: 5px solid var(--backgroundColor);
+}
+nav{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    align-items: center;
+    margin: auto;
+    z-index: -1;
+    width: 100%;
+    position: fixed;
+    border: 5px solid var(--backgroundColor);
+    transition: 0.5s;
+}
+.scroll{
+    background: var(--backgroundColor);
+    border: 5px solid var(--backgroundColor);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    align-items: center;
+    margin: auto;
+    z-index: -1;
+    width: 100%;
+    position: fixed;
+}
+nav ul{
+   display: flex;
+   list-style: none;
+}
+nav ul li a{
+    margin-left: 25px;
+    margin-right: 25px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    z-index: 2;
+}
+nav ul li a:hover{
+    transform: scale(0.5);
+}
+.logo{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+}
+.greyscale{
+    transform: scale(2);
+    backdrop-filter: invert();
+    background: transparent;
+    border: 1px solid rgb(27, 27, 27);
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Button</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        input {
+            /* background: linear-gradient(to right, #8E2DE2, #4A00E0); */
+            background: whitesmoke;
+            color: rgb(0, 0, 0);
+            padding: 17px 25px;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            border-left: 7px solid #ff7300;
+            animation: ChangeColor 2s linear infinite;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+
+        input:hover {
+            border-left: 20px solid #ff7300;
+        }
+
+        @keyframes ChangeColor {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        input:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.youtube.com/"><input type="submit" value="Hover on me!"></a>
+</body>
+
+</html>

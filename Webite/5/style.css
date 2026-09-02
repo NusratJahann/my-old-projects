@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Monserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Font';
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Font";
+    src: url(Font/Nexa/Bold.ttf);
+}
+body{
+    background: #161616;
+    min-height: 200vh;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    display: flex;
+    padding: 20px 90px;
+    z-index: 5;
+}
+nav .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding-right: 10px;
+    z-index: 1001;
+}
+nav ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    position: relative;
+    list-style: none;
+}
+nav ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500px;
+    font-size: 17px;
+    z-index: 100011;
+}
+.sticky a{
+    color: #fff;
+}
+.sticky{
+    animation-name: nothing;
+    animation-duration: 0.5s;
+    background: linear-gradient(-90deg, #f55b57 0%, #f43842 25%, #ea2696 60%, #4b3ec2 100%);
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+}
+@keyframes nothing{
+    0%{
+        background: linear-gradient(-90deg, #f55b57 0%, #f43842 25%, #ea2696 60%, #4b3ec2 100%);
+        clip-path: polygon(0 0, 0% 0, 0% 100%, 0 100%);
+    }
+    100%{
+        background: linear-gradient(-90deg, #f55b57 0%, #f43842 25%, #ea2696 60%, #4b3ec2 100%);
+        clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    }
+}

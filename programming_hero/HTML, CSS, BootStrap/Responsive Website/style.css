@@ -1,0 +1,254 @@
+/* by default */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* navbar */
+nav {
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.logo:hover {
+    transform: rotate(360deg);
+}
+
+.menubar {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 700px;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.fa-angle-down {
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li,
+a {
+    color: black;
+    transition: color 0.5s, weight 0.5s;
+}
+
+nav ul li:hover,
+a:hover {
+    color: #ee1330;
+    font-weight: 500;
+}
+
+.dropdown-container:hover .dropdown-content {
+    display: block;
+}
+
+/* product view */
+.dropdown-content {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    display: none;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: white;
+}
+
+.product-container {
+    background-color: rgb(240, 240, 240);
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.product-container:nth-child(2n):hover {
+    background-color: rgb(196, 209, 230);
+}
+
+.product-container:nth-child(2n+1):hover {
+    background-color: rgb(250, 192, 200);
+}
+
+.product-container:hover img {
+    transform: rotate(8deg) scale(1.5);
+}
+
+.product-container,
+.more-product-btn {
+    padding: 30px 25px;
+    border-radius: 25px;
+}
+
+.product-container img {
+    width: 150px;
+    display: block;
+    margin: auto;
+    transition: all 0.5s;
+}
+
+.product-container p {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.more-product-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.more-product-btn i {
+    font-size: 100px;
+}
+
+/* Main page */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+main section img {
+    transition: transform 0.5s;
+    width: 300px;
+}
+
+main section img:hover {
+    transform: rotate(3deg);
+}
+
+main section,
+article {
+    margin: 0 50px;
+}
+
+.main-heading {
+    font-size: 100px;
+    margin: 0;
+    font-family: 'Lobster', cursive;
+    line-height: 90px;
+    color: rgb(255, 145, 0);
+}
+
+main article button {
+    background-color: rgb(255, 145, 0);
+    border: 0;
+    padding: 10px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    transition: background 0.5s;
+}
+
+main article button:hover {
+    background-color: #ee1330;
+}
+
+/* Media Queries */
+@media screen and (max-width: 970px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    .product-container,
+    .more-product-btn {
+        padding: 30px 25px;
+        border-radius: 0px;
+    }
+
+    .dropdown-content {
+        bottom: -1350px;
+    }
+
+    main {
+        flex-direction: column;
+        height: 100vh;
+        margin-bottom: 90px;
+    }
+
+    main section img {
+        margin-bottom: 50px;
+        width: 200px;
+    }
+
+    .main-heading {
+        font-size: 60px;
+        word-wrap: break-word;
+        line-height: 57px;
+    }
+
+    main article h1 br {
+        display: none;
+    }
+
+    main article h2 {
+        font-size: 20px;
+    }
+
+    main article {
+        text-align: center;
+    }
+
+    .menubar {
+        display: block;
+    }
+
+    .none {
+        display: none;
+    }
+
+    nav ul {
+        width: 300px;
+        padding: 0;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- title -->
+    <title>Panda Gadget</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img width="250" src="./Images/Logo/logo.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-outline-danger">Category</button>
+                                <button type="button"
+                                    class="btn btn-outline-danger dropdown-toggle dropdown-toggle-split"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Smart Watch</a></li>
+                                    <li><a class="dropdown-item" href="#">Smart Band</a></li>
+                                    <li><a class="dropdown-item" href="#">TV Box</a></li>
+                                    <li><a class="dropdown-item" href="#">Gimbal</a></li>
+                                    <li><a class="dropdown-item" href="#">Drones</a></li>
+                                    <li><a class="dropdown-item" href="#">Portable Power Station</a></li>
+                                    <li><a class="dropdown-item" href="#">Studio Equipment</a></li>
+                                    <li><a class="dropdown-item" href="#">Blower</a></li>
+                                    <li><a class="dropdown-item" href="#">Mobile Phone Accesories</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">All Category</a></li>
+                                </ul>
+                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Subscribe</a>
+                        </li>
+                    </ul>
+                    </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-danger" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <section class="container">
+            <div id="carouselExampleCaptions" id="carouselExampleInterval" class="carousel slide"
+                style="box-shadow: rgba(0, 0, 0, 0.062) -4px 9px 25px -6px;" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#"><img src="./Images/banner 1.jpg" class="d-block w-100" alt="..."></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#"><img src="./Images/banner 2.jpg" class="d-block w-100" alt="..."></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#"><img src="./Images/banner 3.jpg" class="d-block w-100" alt="..."></a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </header><br><br><br><br>
+
+    <main>
+        <section class="container">
+            <h1 class="text-center">Categorys</h1><br>
+            <div class="row row-cols-lg-5 row-cols-sm-3 row-cols-md-2">
+                <div class="col btn btn-outline-danger rounded-0 d-flex align-items-center justify-content-center p">
+                    <i class="bi bi-pc-display fs-4"></i>
+                    <div class="p-3 ">Desktop</div>
+                </div>
+                <div class="col btn btn-outline-danger rounded-0 d-flex align-items-center justify-content-center p">
+                    <i class="bi bi-laptop fs-4"></i>
+                    <div class="p-3">Laptops</div>
+                </div>
+                <div class="col btn btn-outline-danger rounded-0 d-flex align-items-center justify-content-center p">
+                    <i class="bi bi-keyboard fs-4"></i>
+                    <div class="p-3 ">Keyboards</div>
+                </div>
+                <div class="col btn btn-outline-danger rounded-0 d-flex align-items-center justify-content-center p">
+                    <i class="bi bi-mouse3 fs-4"></i>
+                    <div class="p-3 ">Mouses</div>
+                </div>
+                <div class="col btn btn-outline-danger rounded-0 d-flex align-items-center justify-content-center p">
+                    <i class="bi bi-headphones fs-4"></i>
+                    <div class="p-3 ">Headphones</div>
+                </div>
+                <div class="col btn btn-outline-danger rounded-0 d-flex align-items-center justify-content-center p">
+                    <i class="bi bi-webcam fs-4"></i>
+                    <div class="p-3 ">Webcams</div>
+                </div>
+                <div class="col btn btn-outline-danger rounded-0 d-flex align-items-center justify-content-center p">
+                    <i class="bi bi-printer fs-4"></i>
+                    <div class="p-3 ">Printers</div>
+                </div>
+                <div class="col btn btn-outline-danger rounded-0 d-flex align-items-center justify-content-center p">
+                    <i class="bi bi-router fs-4"></i>
+                    <div class="p-3 ">Routers</div>
+                </div>
+                <div class="col btn btn-outline-danger rounded-0 d-flex align-items-center justify-content-center p">
+                    <i class="bi bi-controller fs-4"></i>
+                    <div class="p-3 ">Gaming Stuffs</div>
+                </div>
+                <div class="col btn btn-outline-danger rounded-0 d-flex align-items-center justify-content-center p">
+                    <i class="bi bi-smartwatch fs-4"></i>
+                    <div class="p-3 ">Smart Watches</div>
+                </div>
+            </div>
+        </section><br><br><br><br>
+
+        <section class="container">
+            <h1 class="text-center">Products</h1><br>
+            <div class="row row-cols-lg-4 row-cols-1 row-cols-sm-2">
+                <div class="col bg-light rounded-0 p-4 rounded-3">
+                    <img class="w-100" src="./Images/headphone 1.jpg" alt="">
+                    <div class="my-4">
+                        <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3 class="mt-2">৳9900</h3>
+                    </div>
+                    <button class="w-100 btn btn-danger">Buy Now</button>
+                </div>
+                <div class="col bg-light rounded-0 p-4 rounded-3">
+                    <img class="w-100" src="./Images/laptop.jpg" alt="">
+                    <div class="my-4">
+                        <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3 class="mt-2">৳9900</h3>
+                    </div>
+                    <button class="w-100 btn btn-danger">Buy Now</button>
+                </div>
+                <div class="col bg-light rounded-0 p-4 rounded-3">
+                    <img class="w-100" src="./Images/monitor.jpg" alt="">
+                    <div class="my-4">
+                        <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3 class="mt-2">৳9900</h3>
+                    </div>
+                    <button class="w-100 btn btn-danger">Buy Now</button>
+                </div>
+                <div class="col bg-light rounded-0 p-4 rounded-3">
+                    <img class="w-100" src="./Images/headphone.jpg" alt="">
+                    <div class="my-4">
+                        <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3 class="mt-2">৳9900</h3>
+                    </div>
+                    <button class="w-100 btn btn-danger">Buy Now</button>
+                </div>
+                <div class="col bg-light rounded-0 p-4 rounded-3">
+                    <img class="w-100" src="./Images/router 1.jpg" alt="">
+                    <div class="my-4">
+                        <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3 class="mt-2">৳9900</h3>
+                    </div>
+                    <button class="w-100 btn btn-danger">Buy Now</button>
+                </div>
+                <div class="col bg-light rounded-0 p-4 rounded-3">
+                    <img class="w-100" src="./Images/pc.jpg" alt="">
+                    <div class="my-4">
+                        <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3 class="mt-2">৳9900</h3>
+                    </div>
+                    <button class="w-100 btn btn-danger">Buy Now</button>
+                </div>
+                <div class="col bg-light rounded-0 p-4 rounded-3">
+                    <img class="w-100" src="./Images/watch.jpg" alt="">
+                    <div class="my-4">
+                        <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3 class="mt-2">৳9900</h3>
+                    </div>
+                    <button class="w-100 btn btn-danger">Buy Now</button>
+                </div>
+                <div class="col bg-light rounded-0 p-4 rounded-3">
+                    <img class="w-100" src="./Images/webcam.jpg" alt="">
+                    <div class="my-4">
+                        <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3 class="mt-2">৳9900</h3>
+                    </div>
+                    <button class="w-100 btn btn-danger">Buy Now</button>
+                </div>
+                <div class="col bg-light rounded-0 p-4 rounded-3">
+                    <img class="w-100" src="./Images/router.jpg" alt="">
+                    <div class="my-4">
+                        <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3 class="mt-2">৳9900</h3>
+                    </div>
+                    <button class="w-100 btn btn-danger">Buy Now</button>
+                </div>
+                <div class="col bg-light rounded-0 p-4 rounded-3">
+                    <img class="w-100" src="./Images/ram.jpg" alt="">
+                    <div class="my-4">
+                        <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3 class="mt-2">৳9900</h3>
+                    </div>
+                    <button class="w-100 btn btn-danger">Buy Now</button>
+                </div>
+                <div class="col bg-light rounded-0 p-4 rounded-3">
+                    <img class="w-100" src="./Images/gimbal.jpg" alt="">
+                    <div class="my-4">
+                        <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3 class="mt-2">৳9900</h3>
+                    </div>
+                    <button class="w-100 btn btn-danger">Buy Now</button>
+                </div>
+                <div class="col bg-light rounded-0 p-4 rounded-3">
+                    <img class="w-100" src="./Images/gaming chair.jpg" alt="">
+                    <div class="my-4">
+                        <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3 class="mt-2">৳9900</h3>
+                    </div>
+                    <button class="w-100 btn btn-danger">Buy Now</button>
+                </div>
+                <div class="col bg-light rounded-0 p-4 rounded-3">
+                    <img class="w-100" src="./Images/headphone 1.jpg" alt="">
+                    <div class="my-4">
+                        <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3 class="mt-2">৳9900</h3>
+                    </div>
+                    <button class="w-100 btn btn-danger">Buy Now</button>
+                </div>
+            </div>
+        </section>
+        <br><br><br><br>
+
+        <section class="container d-flex flex-column align-items-center bg-light py-5">
+            <h1>Subscribe Now!</h1>
+            <p>LET'S STAY IN TOUCH</p>
+            <div class="d-flex justify-content-center">
+                <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                <button class="btn btn-outline-danger" type="submit">Submit</button>
+            </div>
+        </section><br><br><br>
+        <footer>
+            <p class="text-center">©<a target="_blank" href="https://www.startech.com.bd/">Startech.com </a>2022</p>
+        </footer>
+    </main>
+
+    <footer>
+
+    </footer>
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

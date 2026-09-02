@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --primary-color: #6464ff;
+    --dark-color: #111111;
+    --green-color: #45C16E;
+}
+
+/* one */
+.logo {
+    width: 20rem;
+}
+
+.homepage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.col-1 {
+    flex-basis: 80%;
+    position: relative;
+    margin-left: 10vw;
+}
+
+.col-1 h2,
+.col-1 button {
+    margin-top: 50px;
+}
+
+.col-1 h2,
+.col-1 h2 span {
+    font-size: 5vw;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.col-1 h2 span {
+    color: var(--primary-color);
+}
+
+.col-2 {
+    flex-basis: 20%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 0;
+}
+
+.colorBubble {
+    width: 70rem;
+    z-index: -1;
+    transform: rotate(90deg);
+}
+
+.btn {
+    padding: 10px 30px;
+    font-size: 1.25rem;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--primary-color);
+    font-weight: 600;
+    color: white;
+    margin: 3px;
+    cursor: pointer;
+}
+/* one */
+
+/* two */
+.two{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.colorbox{
+    height: 50vh;
+    width: 80vw;
+    border-radius: 25px;
+    margin-top: 25px;
+    cursor: pointer;
+    background-color: #6464ff;
+}
+.colorbox p{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 50vh;
+    position: absolute;
+    color: white;
+}
+.heading{
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--primary-color);
+}
+.btn1{
+    margin-top: 25px;
+    background-color: var(--green-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* two */
+
+/* media */
+@media screen and (max-width: 1876px) {
+
+    .col-1 h2,
+    .col-1 h2 span {
+        font-size: 5.25vw;
+    }
+
+    .logo {
+        width: 15rem;
+    }
+
+    .colorBubble {
+        width: 100rem;
+        transform: rotate(90deg);
+        opacity: 30%;
+    }
+}
+
+@media screen and (max-width: 1900px) {
+
+    .col-1 h2,
+    .col-1 h2 span {
+        font-size: 4rem;
+    }
+
+    .colorBubble {
+        opacity: 30%;
+    }
+}
+@media screen and (max-width: 469px) {
+    .heading{
+        width: 25px;
+        margin: 0px 40px;
+    }
+    .colorbox{
+        width: 100vw;
+        border-radius: 0%;
+    }
+    .colorbox p{
+        width: 100vw;
+    }
+    .btn1{
+        border-radius: 0%;
+        width: 100%;
+        margin: 0;
+    }
+}

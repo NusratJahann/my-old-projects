@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid template</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .grid-box{
+            display: grid;
+            place-content: center;
+            height: 100vh;
+            grid-template-columns: repeat(2, 0.5fr) 2fr;
+            grid-template-rows: repeat(3, 250px);
+            padding: 0px 160px;
+            grid-gap: 25px; /* Margin but, for grid */
+        }
+        .grid-cell:nth-child(2n){
+            background-color: black;
+        }
+        .grid-cell:nth-child(2n+1){
+            background-color: rgb(255, 220, 174);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-box">
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        
+    </div>
+</body>
+</html>

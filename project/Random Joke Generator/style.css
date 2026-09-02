@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: #13161b;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 20rem;
+    background-color: #F5C33A;
+    box-shadow: 0px 25px 80px -35px black;
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.emoji{
+    max-width: 10rem;
+    margin: 0;
+}
+#jokeBtn{
+    width: 100%;
+    margin-top: 40px;
+    padding: 10px 0px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: #13161b;
+    color: #FBD771;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+#joke{
+    font-size: 1.2rem;
+    font-weight: 500;
+}

@@ -1,0 +1,29 @@
+
+
+# --- Dependencies ---
+node_modules/
+**/node_modules/
+
+# --- Build output ---
+build/
+dist/
+.next/
+out/
+
+
+
+# --- OS / editor junk ---
+.DS_Store
+Thumbs.db
+*.log
+
+# --- Large binaries excluded from git (kept locally only) ---
+programming_hero/Complete Web Development- Batch 5 - Facebook.mp4
+programming_hero/Assignments/Assignment 10/tomal.rar
+programming_hero/Portfolio Extra backup/portfolio-sec1-photo.psd
+programming_hero/Assignments/Assignment 10/urgent/photoshoot-with-akash.rar
+programming_hero/Assignments/Assignment 10/photoshoot-with-akash.zip
+programming_hero/Assignments/Assignment 10/photoshoot-with-akash.rar
+programming_hero/Assignments/Assignment 10/tomal/photoshoot-with-akash.zip
+Webite/9/stars.mov
+programming_hero/Assignments/Assignment 11/warehouse-management-client-side-SadikHasanRafi-master.zip

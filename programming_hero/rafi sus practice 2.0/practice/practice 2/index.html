@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <section id="player-id">
+        <h1>Here is all player.</h1>
+        <article class="players">
+            <h3>player 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur itaque saepe quam delectus cupiditate tenetur sint dolorem repellendus beatae voluptas quo dolores inventore tempore, unde molestiae deserunt qui nulla dignissimos!</p>
+        </article>
+        <article class="players">
+            <h3>player 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur itaque saepe quam delectus cupiditate tenetur sint dolorem repellendus beatae voluptas quo dolores inventore tempore, unde molestiae deserunt qui nulla dignissimos!</p>
+        </article>
+        <article class="players">
+            <h3>player 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur itaque saepe quam delectus cupiditate tenetur sint dolorem repellendus beatae voluptas quo dolores inventore tempore, unde molestiae deserunt qui nulla dignissimos!</p>
+        </article>
+        <article class="players">
+            <h3>player 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur itaque saepe quam delectus cupiditate tenetur sint dolorem repellendus beatae voluptas quo dolores inventore tempore, unde molestiae deserunt qui nulla dignissimos!</p>
+        </article>
+
+        <textarea name="" id="new-comment" cols="16" rows="3"></textarea>
+        <br><br>
+        <button id="update" class="btn">Comment</button>  
+        <br> 
+        <b>Comments</b>     
+        <div id="comment-box"></div>
+        <!-- <p>Here is your comments.</p> -->
+        <!-- <ul>
+            <li type="1" id="comments"></li>
+        </ul> -->
+        <br><br>
+        <input type="text" id="input2">
+        <button id="delBtn">Delete</button>
+        <script>
+            const commontBtn = document.getElementById("update");
+            let i = 0;
+
+            commontBtn.addEventListener("click",function(){
+                
+                const newComment = document.getElementById("new-comment");
+                let comment = newComment.value;
+                if(comment == ""){
+                    alert("No comments");
+                    return;
+                }
+                i++;
+                newComment.value = "";
+                comment = i +". "+ comment;
+                
+                console.log("pass the break");
+                
+                //create element 
+                const p = document.createElement("div");
+                p.innerText = comment;
+
+                //append child
+                const commentBox = document.getElementById("comment-box");
+                commentBox.appendChild(p);             
+                
+            })
+
+            let input2 = document.getElementById('input2 ');
+            input2.addEventListener('change'), function() {
+                console.log(input2.value);
+            })
+
+
+function nus(){
+
+    let p = true;
+
+    if(p==true){
+        //ebale
+        p=false;
+    }
+    else{
+        //disable
+        p=true;
+    }
+
+
+}
+
+        </script>
+
+    </section>
+</body>
+</html>

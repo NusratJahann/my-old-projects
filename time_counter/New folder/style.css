@@ -1,0 +1,43 @@
+.container{
+    background-color: rgb(252, 247, 240);
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    border: 5px rgb(88, 82, 82) solid;
+    border-radius: 15px;
+    margin-top: 50px;
+    width: 500px;
+    display: flex;
+    gap: 30px;    
+}
+
+section{
+    display: flex;
+}
+
+img{
+    border-radius: 5px;
+    height: min-content;
+}
+form{
+   
+} 
+body{
+    display: flex  ;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+*{
+    margin-top: 5px;
+}
+.propic{
+    margin-top: 5px;
+}
+
+.formHeader{
+    display: flex;
+    
+    flex-direction: column;
+}
+
